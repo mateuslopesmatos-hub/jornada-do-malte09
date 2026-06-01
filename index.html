@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo ao Copo: A Jornada do Malte em Guarapuava</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Controles de Acessibilidade">
+        <button id="btn-decrease" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button id="btn-increase" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="btn-contrast" aria-label="Alternar modo de alto contraste">🌓 Alto Contraste</button>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Do Campo ao Copo">
+                <h1>Do Campo ao Copo</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#jornada">A Jornada</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#midia">Multimídia</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Hero.png');">
+            <div class="hero-content">
+                <h2>A Jornada do Malte em Guarapuava</h2>
+                <p>Agro forte, futuro sustentável: o equilíbrio perfeito entre a produção tecnológica de cevada e a preservação do meio ambiente.</p>
+                <button id="btn-explore" class="btn-primary">Explorar a Jornada</button>
+            </div>
+        </section>
+
+        <section id="jornada" class="container">
+            <h2 class="section-title">A Cadeia Produtiva da Cevada</h2>
+            <div class="grid-3">
+                <div class="card-jornada">
+                    <img src="img/Campo.png" alt="Lavoura de cevada verde em Guarapuava">
+                    <h3>1. O Cultivo no Campo</h3>
+                    <p>Tudo começa no solo fértil de Guarapuava. Com manejo responsável, rotação de culturas e monitoramento tecnológico, a cevada cresce forte e saudável.</p>
+                </div>
+                <div class="card-jornada">
+                    <img src="img/Malte.png" alt="Processo industrial de malteação dos grãos">
+                    <h3>2. A Indústria e o Malte</h3>
+                    <p>Após a colheita, os grãos vão para a maltearia. Através de processos controlados de germinação e secagem, a cevada se transforma em malte com alta eficiência energética.</p>
+                </div>
+                <div class="card-jornada">
+                    <img src="img/Cidade.png" alt="Integração do malte chegando ao ambiente urbano">
+                    <h3>3. Conexão com a Cidade</h3>
+                    <p>O malte processado abastece indústrias e gera emprego e renda, conectando diretamente a economia do campo com o desenvolvimento tecnológico urbano.</p>
+                </div>
+            </div>
+
+            <div class="curiosity-box text-center">
+                <h3>💡 Você Sabia?</h3>
+                <p id="curiosity-text">Clique no botão abaixo para descobrir uma curiosidade sobre a cevada e a sustentabilidade!</p>
+                <button id="btn-curiosity" class="btn-secondary">Nova Curiosidade</button>
+            </div>
+        </section>
+
+        <section id="galeria" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Galeria Interativa</h2>
+                <div class="carousel" role="region" aria-label="Carrossel de Imagens">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="img/Campo.png" alt="O início de tudo: plantio sustentável de cevada">
+                            <div class="carousel-caption">O início de tudo: plantio sustentável de cevada</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/Malte.png" alt="Tecnologia aplicada na transformação do malte">
+                            <div class="carousel-caption">Tecnologia aplicada na transformação do malte</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/Cidade.png" alt="Desenvolvimento econômico e urbano integrado">
+                            <div class="carousel-caption">Desenvolvimento econômico e urbano integrado</div>
+                        </div>
+                    </div>
+                    <button class="carousel-prev" aria-label="Imagem anterior">❮</button>
+                    <button class="carousel-next" aria-label="Próxima imagem">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sustentabilidade" class="container">
+            <h2 class="section-title">Práticas Sustentáveis</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>🌱 Manejo Responsável do Solo</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>O uso do plantio direto e a rotação de culturas protegem a estrutura do solo de Guarapuava, evitando a erosão e mantendo os nutrientes de forma natural.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>💧 Uso Consciente da Água</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sistemas modernos de irrigação monitoram a umidade do solo em tempo real, aplicando a quantidade exata de água necessária e evitando desperdícios industriais.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>🔬 Tecnologia e Preservação</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Drones e sensores agrícolas mapeiam as lavouras, permitindo a aplicação localizada de insumos, reduzindo o impacto ambiental e otimizando a produção.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="midia" class="bg-light">
+            <div class="container grid-2">
+                <div class="media-box">
+                    <h3>🎬 Vídeo Educativo</h3>
+                    <div class="video-wrapper">
+                        <video controls poster="img/Hero.png">
+                            <source src="img/Clipe.mp4" type="video/mp4">
+                            Seu navegador não suporta a exibição de vídeos.
+                        </video>
+                    </div>
+                </div>
+                <div class="media-box">
+                    <h3>📖 História em Quadrinhos</h3>
+                    <div class="iframe-wrapper">
+                        <iframe id="hq-iframe" src="HQ/hq.html" title="História em Quadrinhos Educativa" style="width:100%; height:350px; border:none;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="container">
+            <h2 class="section-title">Teste Seus Conhecimentos</h2>
+            <div class="quiz-container">
+                <div id="quiz-window">
+                    <div class="quiz-header">
+                        <span id="question-number">Pergunta 1 de 3</span>
+                    </div>
+                    <h3 id="question-text">Texto da Pergunta</h3>
+                    <div id="quiz-options" class="quiz-options">
+                        </div>
+                </div>
+                <div id="quiz-result" class="hidden text-center">
+                    <h3>Resultado do seu Quiz</h3>
+                    <p id="result-text">Você acertou X de Y perguntas.</p>
+                    <button id="btn-restart-quiz" class="btn-primary">Tentar Novamente</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content text-center">
+            <p><strong>Projeto:</strong> Do Campo ao Copo: A Jornada do Malte em Guarapuava</p>
+            <p>Concurso Agrinho 2026 — Categoria Programação (Front-End)</p>
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub do projeto"><img src="img/github.png" alt="GitHub"></a>
+                <a href="#" aria-label="Instagram da escola"><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+            <p class="credits">&copy; 2026 — Desenvolvido com fins pedagógicos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
