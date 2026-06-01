@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HQ Incorporada</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #333333;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        body.high-contrast {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+        .hq-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            border: 3px dashed #4caf50;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        body.high-contrast .hq-container {
+            border-color: #ffff00 !important;
+        }
+        .comic-placeholder {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hq-container">
+        <p class="comic-placeholder">📖 [Espaço da sua História em Quadrinhos Educativa]</p>
+        <p>Insira aqui as imagens sequenciais ou ilustrações da jornada do personagem aprendendo sobre o campo sustentável, a indústria e a cidade.</p>
+    </div>
+
+    <script>
+        // Sincroniza o modo de alto contraste recebido do documento pai (index.html)
+        window.addEventListener("message", (event) => {
+            if (event.data && event.data.type === "toggleContrast") {
+                if (event.data.active) {
+                    document.body.classList.add("high-contrast");
+                } else {
+                    document.body.classList.remove("high-contrast");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
